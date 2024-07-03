@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cambria;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #9493bd;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #111111;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #575757;
+}
+
+body {
+    
+    background-color: rgb(245, 247, 246);
+    color: #333;
+    text-align: center;
+    background-image: url('../assets/imagenes/tech.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+img {
+    border-radius: 50%;
+    padding: 15px;
+    max-width: 200px;
+}
+
+div {
+    padding: 15px;
+}
+
+header {
+    color: rgb(54, 53, 53);
+    font-size: 70px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.tech {
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Proyectos{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;    
+}
+
+.Proyectos div p a{
+    text-decoration: none;
+    color: #333;
+}
+
+.Proyectos div p :hover{
+    color: #fff;
+}
+
+.RyM{
+    background-color:#8786b893;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 15px;    
+}
+
+.Odontologia{
+    background-color:#8786b893;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.Simpsons{
+    background-color:#8786b893;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.Proyectos div img{
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    display: wrap;
+}
+
+#contacto {
+    background-color: #8786b893;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 15px);
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+    font-size: 16px;
+    border-color: #ccc;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #26c2a8;
+    outline: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(178, 230, 212);
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #8acfc4;
+}
+
+.redes-sociales{    
+    color: #333;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.social-icons i{
+    color: #333;
+    margin: 5px;
+}
+
+.social-icons :hover{
+    color: #fff;
+}
+
+footer {
+    background-color: #9493bdc2;
+    color: #333;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    height: auto;
+    min-height: 60px;
+    margin-top: auto;
+    justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+    .proyecto {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .proyecto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .intro img {
+        width: 100px;
+        height: 100px;
+    }
+}
